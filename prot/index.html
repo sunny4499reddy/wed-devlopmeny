@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>RAJESH REDDY </span>
+            </div>
+        </div>
+    </div>
+    <!--- --------about---------- --->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\User\Downloads\IMG-20231018-WA0087-removebg-preview.png">
+                </div>
+                <div class="About-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My Name is DASARI RAJESH REDDY
+                        I did my graduation B.Tech in Electronics and Communication Engineering
+                        from Geethanjali College of Engineering and Technology,Hyderabad.
+                        My strength are I am self motivated & hard working.
+                        My short term goal is to get a job in reputed company.
+                        My long term goal is to achieve a good position where I can build my career and help the
+                        organization. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Skills</span><br>C, Java,HTML,CSS & Javascript</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2022</span><br>Internship at Smart Interviews</li>
+                            <li><span>October 2022 To June 2023 </span><br>Full stack Development at CareerX
+                                Institute
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2019-2023(B.Tech-65%) Geethanjali College of Engineering and
+                                Technology,Hyderabad</span><br>Electronics and Communication Engineering</li>
+                        <li><span>2017-2019(Intermediate-78%) SRI Chaitanya Junior College,Hyderabad</span><br>MPC
+                        </li>
+                        <li><span>2017(SSC-65%)</span><br>S.P.R school of excellent </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- --------services--------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>Web Design</h2>
+                        <p>Learn Web Development from CareerX Institute.
+                            Having a good knowledge on HTML,CSS & Javascript.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Coading</h2>
+                        <p>Having a knowledge on coading languages.C,Java</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------portfolio---------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="C:\Users\User\Downloads\music.png">
+                        <div class="layer">
+                            <h3>Music and vocals sepaeator from song using machine learning </h3>
+                            <p>User Experience has become one of the most important features.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="C:\Users\User\Downloads\cancer.jpg">
+                        <div class="layer">
+                            <h3>Cancer Detection using deeplearning</h3>
+                            <p>A CNN method is one of the popular deep learning methods that form convolutional
+                                operations in raw data</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="C:\Users\User\Downloads\hhh.jpg">
+                        <div class="layer">
+                            <h3>Personal Portfolio Website.</h3>
+                            <p>A personal portfolio is an opportunity to reach more people with my work..</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- ---------contact--------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> rajesh4499reddy@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> 7780352184</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/_rajesh_reddie_"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/dasari-rajesh-reddy-908636255"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/in/prasad/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.twitter.com/in/prasad/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://github.com/sunny4499reddy/git-test-"><i class="fab fa-github"></i></a>
+                        </div>
+                        <a href="c:\Users\User\Downloads\updated resume.pdf" download class="btn btn2">Download
+                            CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg">Hello</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright © rajesh.Made with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxTFbIqJ8EHbblJO4kBGGwe0ng4PrgojSYxPrw1HMFJn0bMAzThpHC5Qxli9W_rnw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+</body>
+
+</html>
